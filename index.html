@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="author" content="Jennifer Yin">
+        <title>Jennifer Yin's website</title>
+    </head>
+    <body class = "background-gradient">
+        <h1 class = "banner">Jennifer Yin</h1>
+        <h2 class = "banner">Electrical Enginering and Computer Science</h2>
+        <h2 class = "banner" id = "bottom-banner">UC Berkeley</h2>
+        <div class = "about">
+            <h3>Hi, nice to meet you!</h3>
+            <div class = "flex-wrapper">
+                <img src = "me.jpeg" alt = "mypicture" id = "my-pic">
+                <ul>
+                    <li class = "about-bullets">I'm a sophmore studying Electrical Engineering and Computer Science!</li>
+                    <li class = "about-bullets">I have some experience in ML, cyber security, and full stack development</li>
+                    <li class = "about-bullets">I read fantasy books in my free time</li>
+                    <li class = "about-bullets">I enjoy cooking</li>
+                    <li class = "about-bullets">I'm a Star Wars nerd</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Past Experience and Projects</h3>
+        <div class = "grid-container">
+            <div class = "grid-item">
+                <h4>Academic Intern</h4>
+                <h5>UC Berkeley</h5>
+                <h6>January 2022 – May 2022</h6>
+                <ul>
+                    <li>Helped teach CS fundamentals</li>
+                    <li>Such as: recursion, abstraction, trees, OOP, interpreters</li>
+                    <li>Languages: Python, Scheme, Regex, SQLite</li>
+                </ul>
+            </div>
+            <div class = "grid-item">
+                <h4>Student Researcher</h4>
+                <h5>UCSB</h5>
+                <h6>June 2020 – July 2020</h6>
+                <ul>
+                    <li>Researched improving noise robustness in machine learning algorithms that use brain waves</li>
+                    <li>Used PyTorch to modify a multimodal deep learning classification model that identified people with brain signals</li>
+                    <li>Modified existing model into regression model that predicts the intensity of emotions using EEG</li>
+                </ul>
+            </div>
+            <div class = "grid-item">
+                <h4>Summer Research Academies</h4>
+                <h5>UCSB</h5>
+                <h6>June 2019 – July 2019</h6>
+                <ul>
+                    <li>Analyzed predictors of whether a bill is passed or not in Congress using multivariate logistic regression</li>
+                    <li>Investigated opinion dynamics and epidemic/gossip propagation using graphs, statistics, and probability theory</li>
+                </ul>
+            </div>
+            <div class = "grid-item">
+                <h4>Voice-Controlled Robot Car</h4>
+                <h5>UC Berkeley</h5>
+                <h6>January 2022 – May 2022</h6>
+                <ul>
+                    <li>Created a double-motored robot car that can drive straight and turn with voice commands</li>
+                    <li>Used signal processing, feedback control, PCA and SVD, and clustering</li>
+                </ul>
+            </div>
+            <div class = "grid-item">
+                <h4>Version Control System – Gitlet</h4>
+                <h5>UC Berkeley</h5>
+                <h6>April 2022</h6>
+                <ul>
+                    <li>Designed a version-control system in Java using Serializable objects and the SHA-1 hash</li>
+                    <li>Implemented functions such as init, add, commit, checkout, branch, reset, merge, push, fetch, pull</li>
+                </ul>
+            </div>
+            <div class = "grid-item">
+                <h4>GenCyber Space Camp</h4>
+                <h5>California Cybersecurity Institute</h5>
+                <h6>July 2021 - August 2021</h6>
+                <ul>
+                    <li>Conducted digital forensics using Autopsy</li>
+                    <li>Monitored network traffic using Wireshark</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3>Contact</h3>
+        <div class= "contact-container" >
+            <div class = "contact-item">Phone Number: 805-300-2356</div>
+            <div class = "contact-item">Email: jenniferyin@berkeley.edu</div>
+            <div class = "contact-item">LinkedIn: 
+                <a target="_blank" href="www.linkedin.com/in/jennifer-yin-0922781bb" target="_blank">linkedin.com/in/jenniferyin0</a>
+            </div>
+        </div>
+
+        <!-- <br><br><br>
+        <h4>submit your name for a secret!</h4>
+        <form>
+            <input />
+            <input type="submit" />
+        </form> -->
+
+        <div class = "secret">
+            <h4 id = "form-header">submit your name for a secret!</h4>
+            <form onsubmit="myFunction()">
+              <label>Enter your name:</label>
+              <input placeholder="type into me!" class="name-to-copy" id="name"/>
+              <input type="submit" id = "submit-name" />
+              <p class = "message" id = "m">Thanks for visiting!</p>
+            </form>
+
+            <script>
+                // document.getElementByID("submit-name").addEventListener("click", myFunction);
+                function myFunction() {
+                    // const input = document.querySelector('.name-to-copy');
+                    // var n = document.getElementById("name").value; 
+                    // alert(n); 
+                    var x = "Thanks for visiting the website, " + document.getElementById("name").value + "!";
+                    alert(x);
+                    // const paragraph = document.querySelector('.message');
+                    // document.getElementById("m").value = x;
+                    // paragraph.innerText = x;
+                }
+            </script>
+
+        </div>
+
+    </body>
+</html>
